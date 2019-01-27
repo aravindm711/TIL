@@ -35,6 +35,3 @@ floor((N - 1) / 2), because, the maximum remainder possible to get is a lesser
 and closest value to (N / 2), which will be the half of the next lesser number to N,
 hence floor((N - 1) / 2).
 
-
-
-
