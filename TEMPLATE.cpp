@@ -71,7 +71,7 @@ typedef pair<int64,int64>      p64;
 typedef pair<double,double>    pdd;
 typedef vector<int64>          v64;
 typedef vector<int>            v32;
-typedef vector<vector<int>>    vv32;
+typedef vector<vector<int> >   vv32;
 typedef vector<p64>            vp64;
 typedef vector<p32>            vp32;
 typedef map<int,int>           m32;
@@ -79,7 +79,7 @@ typedef map<int64,int64>       m64;
 //#pragma GCC optimize ("-O2")
 //template<class T> using min_heap = priority_queue<T, std::vector<T>, std::greater<T> >;
 const int MOD = 1000000007;
-# define MODSET(d) 				if ((d) >= MOD) d %= MOD;
+# define MODSET(d) 			if ((d) >= MOD) d %= MOD;
 # define MODNEGSET(d) 			if ((d) < 0) d = ((d % MOD) + MOD) % MOD;
 # define MODADDSET(d) 			if ((d) >= MOD) d -= MOD;
 # define MODADDWHILESET(d) 		while ((d) >= MOD) d -= MOD;
@@ -91,6 +91,8 @@ const int INT_INFINITY = 1001001001;
 //const slong LONG_INFINITY = 2001001001001001001ll;
 const double EPS = 1e-6;
 const int LIMIT = 1e6;
+
+# define looptc int t; cin >> t; while(t--)
 
 int main() {
 	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
