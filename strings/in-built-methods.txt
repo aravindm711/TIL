@@ -1,1 +1,31 @@
+Source: 'Dubstep' from 14th problem in A2OJ Codeforces - Div.2 (A) Ladder
 
+Problem:
+
+Find and replace all the "WUB" substring in the given string and
+print the remaining words.
+
+Solution:
+
+In-built function, 'find', for strings finds the first occurence(index) of the
+given substring in the given string and returns the index.
+
+Another function, 'replace', lets us replace a portion of a string, or characters
+within a range provided.
+
+The approach is to find the first occurence of the given substring and replace it
+with " "(one-space) and loop through till we are left with no occurence of the given
+substring.
+
+And, print the obtained string, after all the operations, which would be the string 
+containing the words seperated by one or more spaces(which satisfies the problem statement,
+because, only the number of words are being counted for checking with the judges' answer)
+
+In-built functios:
+
+<string-name>.replace(pos, len, substring);      // 'pos' is the starting position or index from which to be inserted
+                                                 // 'len' is the length(portion) of the string to be replaced
+                                                 // 'substring' is the substring to replace it with
+                                                 
+<string-name>.find(substring, pos);              // 'substring' is the substring to be found (first occurence) 
+                                                 // 'pos' is the position or index to start searching from
