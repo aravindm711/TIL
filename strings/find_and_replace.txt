@@ -29,5 +29,14 @@ In-built functios:
                                                  
 <string-name>.find(substring, pos);              // 'substring' is the substring to be found (first occurence) 
                                                  // 'pos' is the position or index to start searching from
+                                                 // returns string::npos as the value when no match is found
 
+'string::npos' is a static member constant and is the greatest value possible for the type 'size_t'.
+This value is usually used returned when no match is found using find function.
+
+Usually,
+
+        string::npos = 18446744073709551615
+        
+hence, this comparison can be used as a check value to check if there is no match.
 
