@@ -77,7 +77,8 @@ const int INT_INFINITY = 1001001001;
 const double EPS = 1e-6;
 const int LIMIT = 1e6;
 
-# define looptc int t; cin >> t; while(t--)	// looptc is for skipping the part where number of testcases are to be taken as input
+# define looptc 	      int t; cin >> t; while(t--) 	      // Loopint through testcases
+# define printintarray(a, b)  for (int a : b) std::cout << a << "\n"; // Printing an array
 
 int main() {
 	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
