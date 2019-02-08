@@ -77,7 +77,7 @@ const int INT_INFINITY = 1001001001;
 const double EPS = 1e-6;
 const int LIMIT = 1e6;
 
-# define looptc 	      int t; cin >> t; while(t--) 	      // Loopint through testcases
+# define looptc 	      int t; cin >> t; while(t--) 	      // Looping through testcases
 # define printintarray(a, b)  for (int a : b) std::cout << a << "\n"; // Printing an array
 
 int main() {
