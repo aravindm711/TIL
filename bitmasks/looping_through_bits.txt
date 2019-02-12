@@ -1,0 +1,121 @@
+Source - 'Fedor and New Game' from Codeforces Div 2 - B ladder 
+
+
+
+Extract of the problem:
+
+Given, value of k, count of the numbers that have atmost k dissimilar bits with the last element
+from the list of m + 1 elements given.
+
+Solution:
+
+Using bitmasks, looping through from the lsb(least significant bit) to msb till one of them exceed 
+one of the two values being compared(resp.).
+
+Comparing every jth bit of the numbers and checking if the two results are not equal, and if this is satisfied
+count is increased. This is possible because, on checking if jth bit of a number, when using bitmasks, gives 
+the same number irrespective of the number being checked(demonstrated in the explanation).
+
+Checking count values for every number with k and updating the result value.
+And, finally printing the value of the result.
+
+Explanation:
+
+Bitmasks are a.k.a lightweigth, small sets of boolean values. An integer is stored in the machine as a 
+sequence of bits. Hence, any integer up to (64 bits max) can be used to represent boolean values, as 
+each bit is either 0 or 1. This kind of manipulation is much faster than any other techniques or methods 
+provided by C++, like, STL vectors, maps and such.
+
+    Manipulation of the bits,
+    
+          Let's say variable 'a' has the value 34,
+          
+                  a = 34(decimal) = 100010(binary equivalent)
+                  
+          In this case, the 5th bit and the 2nd bit are 1 and can represent true values and other bits as false
+          
+          
+          
+          Multiplication or Division,
+          
+          Any integer can be multiplied or divided by 2 raised to the power n, simply by shifting or slicing bits
+          from the bits representing the integer,
+          
+      ==> for division,
+          
+          a = 34 / 2 = (34 >> 1) = 10001 = 17              // (>>) operator performs the slicing of bits operation
+          
+          previously,
+          
+          a = 34 = 100010
+          a / 2 = 10001(0) = 17                            // the last zero has been sliced off from the bits 
+          
+      ==> for multiplication,
+          
+          a * 2 = 34 * 2 = (34 << 1) = 1000100 = 68        // (<<) operator performs the shifting of bits operation
+          a * 4 = 68 * 4 = (68 << 2) = 100010000 = 272     // shifting bits by 2 places
+          
+      ==> changing jth bit from 0 to 1,
+          
+          --> shift 1 to jth bits and 'or' with the number,
+                let j = 3,
+                
+                a = a | (1 << 3) = 34 | (1 << 3) = 101010 = 42
+                
+                previously,
+                
+                a = 34 = 100010
+                
+                a | (1 << 3) = a | (000100), (performing 'or' operation)
+                
+                        100010
+                        001000
+                        -----
+                        101010 = 42 (decimal equivalent)
+                        
+       ==> checking if jth bit is 1,
+       
+            --> shifting 1 j bits and performing 'and' operation with the number to give 
+                us either non-zero number if the bit is 1 or 0 if the bit is 0.
+                
+                let j = 3, a = 42,
+                a = a & (1 << 3) = (101010) & (001000) = 001000 = 8 (non-zero)
+                
+                hence, 4th bit is 1.
+                
+    There are many more applications for bitmasks, like, 
+        
+        --> turning jth from 1 to 0,
+        
+            use, A &= ∼(1 << j)
+            
+        --> flipping jth bit's status,
+        
+            use, A ∧ = (1 << j)
+        
+        --> to get the position of the first least significant bit that is on (first from the right),
+        
+            use, T = (A & (-A))
+        
+        --> iterating through all the subsets of size n,
+        
+            use, for ( x = 0; x < (1 << n); ++x )
+            
+            
+            
+    Limitations,
+    
+        --> Always check the size of the set to determine whether to use int or long long or not using
+            bitmasks at all,
+            
+        --> Using parenthesis for performing bit operations is very important as, if not, it might yield
+            undesired results,
+            
+            For example, let x = 5. Then x - 1 << 2 = 16, but x - (1 << 2) = 1.
+          
+          
+          
+          
+          
+          
+          
