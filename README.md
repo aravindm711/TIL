@@ -10,9 +10,9 @@ Competitive programming is a must for life to be **Beautiful**.
 > -Linus Torvalds
 
 ## Handles
-* [code_monsta](https://codeforces.com/profile/code_monsta) - Codeforces handle
-* [code_monsta](https://codechef.com/users/code_monsta) - Codechef handle
-* [code_monsta](https://www.stopstalk.com/user/profile/code_monsta) - StopStalk handle
+* [code_monsta](https://codeforces.com/profile/code_monsta) - Codeforces
+* [code_monsta](https://codechef.com/users/code_monsta) - Codechef
+* [code_monsta](https://www.stopstalk.com/user/profile/code_monsta) - StopStalk
 
 ## References
 [Learncpp](https://learncpp.com) - learn C++
