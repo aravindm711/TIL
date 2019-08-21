@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+long long findgcd(long long a, long long b) {
+    while(b) {
+        a %= b;
+        b ^= a;
+        a ^= b;
+        b ^= a;
+    }
+    return a;
+}
+$1
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fgcd</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++</scope>
+	<description>returns long long</description>
+</snippet>
