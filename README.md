@@ -6,6 +6,8 @@ Just Competitive Programming stuff.
 
 ## Contents
 
+* [A Curated list of awesome problems for you](awesome-list.md)
+
 * [Sublime snippets to make life easier](.sublime-snippets/)
 
 ## References
