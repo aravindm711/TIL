@@ -11,15 +11,16 @@ using namespace std;
 # define rforsn(i,s,e)          for(int i = s; i > e; i--)
 # define looptc					int t; cin >> t; while(t--)
 # define ln                     "\n"
+# define ll						long long
 
-$2
+$1
 
 int main() {
 	ios_base::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 	freopen("_input.txt", "r", stdin);
 	// freopen("output.txt", "w", stdout);
 
-	$1
+	$2
 
 	cout << endl;
 	return 0;

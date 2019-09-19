@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+$2import sys
+sys.stdin=open('_input.txt')
+
+$1
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>pyinit</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.python</scope>
+    <description>redirect input to text file</description>
+</snippet>
