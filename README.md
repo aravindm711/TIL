@@ -1,17 +1,10 @@
 # TIL
 
-Just Competitive Programming stuff.
-
-![competitive-programming-gif](https://ci4.googleusercontent.com/proxy/oAcEW-_D8R07HvOLgQPp0YFWAXUVFyDpORGD_e62upYIxE259ZfxKyN8IbTn4X6PPJSeBZELz-OfYJFYLy8dsCtu4wlbIAQNMk0EiGfX3FlT4ckl06l36EV5=s0-d-e1-ft)
-
-## Contents
+## mention-worthy
 
 * [A Curated list of awesome problems for you](awesome-list.md)
 
-* [Sublime snippets to make life easier](.sublime-snippets/)
+* [Code snippets to make life easier (vim ultisnips snippets)](https://github.com/aravindm711/.dotfiles/tree/master/.vim/ultisnips)
 
-## References
+* [A useful terminal command to recursively dump all the binaries into gitignore](https://github.com/aravindm711/.dotfiles/tree/master/bin/add-exec-gitignore)
 
-[Learncpp](https://learncpp.com) - learn C++
-
-[CP-Algorithms](https://cp-algorithms.com) - learn algorithms used in competitive programming
